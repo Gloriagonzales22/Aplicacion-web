@@ -68,7 +68,7 @@ namespace Blazor.Controllers
             return LocalRedirect("/");
         }
 
-        [HttpGet("/account/login")]
+        [HttpGet("/account/logout")]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
